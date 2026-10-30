@@ -42,7 +42,12 @@ class Solution {
             return new int []{-1,-1}; 
         }
         int startindex=lowerbound(nums,target);
-      
+        // if(startindex==nums.length || nums(startindex)!=target){
+        //     return int []{-1,-1}; 
+        // }
+        if(startindex==-1){
+            return new int []{-1,-1}; 
+        }
 
         int endindex=upperbound(nums,target);
         
