@@ -1,8 +1,7 @@
 class Solution {
     static void reversearr(int[] nums,int start, int last){
         while(start<last){
-            int temp;
-            temp=nums[start];
+            int temp=nums[start];
             nums[start]=nums[last];
             nums[last]=temp;
             start++;
